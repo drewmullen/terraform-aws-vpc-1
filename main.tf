@@ -6,10 +6,19 @@
 # Defaults
 ######################################
 terraform {
-  required_version = ">= 1.0.0"
+  required_version = ">= 1.0.8"
 }
 
-provider "aws" {
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/awscc"
+      version = "~> 0.1"
+    }
+  }
+}
+
+provider "awscc" {
   region  = var.region
   profile = var.profile
 }
