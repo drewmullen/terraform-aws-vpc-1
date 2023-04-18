@@ -111,7 +111,7 @@ output "rt_attributes_by_type_by_az" {
 
   Example:
   ```
-  route_table_attributes_by_type_by_az = {
+  rt_attributes_by_type_by_az = {
     "private" = {
       "us-east-1a" = {
         "id" = "rtb-0e77040c0598df003"
